@@ -1,0 +1,18 @@
+#smoothieOptions{
+    display: none;
+}
+#milkshakeOptions{
+    display: none;
+}
+#milkshakeExtras{
+    display: none;
+}
+#drink{
+    border: 2px solid black;
+}
+#drinkOrder{
+    border: 2px solid black;
+}
+#anotherDrink{
+    margin-left: 5%;
+}

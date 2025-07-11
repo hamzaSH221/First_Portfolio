@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Barrys Bevvies</title>
+</head>
+<body>
+    <h1>Barrys Bevvies</h1>
+
+    <!-- Size ------------------------------------------------------------->
+    <fieldset>
+        <legend>Size</legend>
+
+        <p>
+            <input type="radio" id="small" name="size" value="small" checked>
+            <label for="small">Small - £2.50</label>
+        </p>
+        
+        <p>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium - £3.00</label>
+        </p>
+        
+        <p>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large - £3.55</label>
+        </p>
+
+        
+        <p>
+            <input type="radio" id="extraLarge" name="size" value="extraLarge">
+            <label for="extraLarge">Extra Large - £4.20</label>
+        </p>
+    </fieldset>
+
+    <!-- Type ------------------------------------------------------------------------------->
+    <fieldset>
+        <legend>Type</legend>
+
+        <p>
+            <input type="radio" id="smoothie" name="type" value="smoothie">
+            <label for="smoothie">Smoothie</label>
+        </p>
+
+        <p>
+            <input type="radio" id="milkshake" name="type" value="milkshake">
+            <label for="milkshake">Milkshake</label>
+        </p>
+    </fieldset>
+
+    <!-- smoothie options ------------------------------------------------------------------->
+    <fieldset id="smoothieOptions">
+        <legend>Juice Bases</legend>
+    
+        <p>
+            <input type="radio" id="appleJuice" name="smoothieOptions" value="appleJuice" checked>
+            <label for="appleJuice">Apple Juice</label>
+        </p>
+
+        
+        <p>
+            <input type="radio" id="orangeJuice" name="smoothieOptions" value="orangeJuice">
+            <label for="orangeJuice">Orange Juice</label>
+        </p>
+    </fieldset>
+
+    <!-- milkshake options ---------------------------------------------------------------->
+    <fieldset id="milkshakeOptions">
+        <legend>Milk Bases</legend>
+
+        <p>
+            <input type="radio" id="wholeMilk" name="milkshakeOptions" value="wholeMilk">
+            <label for="wholeMilk">Whole Milk</label>
+        </p>
+
+        <p>
+            <input type="radio" id="semiSkimmedMilk" name="milkshakeOptions" value="semiSkimmedMilk" checked>
+            <label for="semiSkimmedMilk">Semi-Skimmed Milk</label>
+        </p>
+
+        <p>
+            <input type="radio" id="skimmedMilk" name="milkshakeOptions" value="skimmedMilk" >
+            <label for="skimmedMilk">Skimmed Milk</label>
+        </p>
+
+        <p>
+            <input type="radio" id="soyaMilk" name="milkshakeOptions" value="soyaMilk" >
+            <label for="soyaMilk">Soya Milk</label>
+        </p>
+
+        <p>
+            <input type="radio" id="oatMilk" name="milkshakeOptions" value="oatMilk" >
+            <label for="oatMilk">Oat Milk</label>
+        </p>
+
+    </fieldset>
+
+    <!--milkshake extra options ------------------------------------------------------------>
+    <fieldset id="milkshakeExtras">
+        <legend>Milkshake Extras</legend>
+        <p>75p each</p>
+        <p>
+            <input type="checkbox" id="malt" name="milkshakeExtras"  >
+            <label for="malt">Malt - £0.75</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="marshmellows" name="milkshakeExtras">
+            <label for="marshmellows">Marshmellows - £0.75</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="whippedCream" name="milkshakeExtras">
+            <label for="whippedCream">Whipped Cream - £0.75</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="baileys" name="milkshakeExtras">
+            <label for="baileys">Baileys - £0.75</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="flake" name="milkshakeOptions">
+            <label for="flake">Flake - £0.75</label>
+        </p>
+    </fieldset>
+
+    <!-- Ingredients ---------------------------------------------------------------------->
+    <fieldset>
+        <legend>Ingredients</legend>
+
+        <p>
+            <input type="checkbox" id="bannana" name="bannana" value="bannana">
+            <label for="bannana">Bannana</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="mango" name="mango" value="mango">
+            <label for="mango">Mango</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="raspberries" name="raspberries" value="raspberries">
+            <label for="raspberries">Raspberries</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="cherries" name="cherries" value="cherries">
+            <label for="cherries">Cherries</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="passionFruit" name="passionFruit" value="passionFruit">
+            <label for="passionFruit">Passion Fruit</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+            <label for="chocolate">Chocolate</label>
+        </p>
+    </fieldset>
+
+    <!-- Basket ---------------------------------------------------------------------->
+    <fieldset>
+        <legend>Basket</legend>
+        <p>
+            <div id="drink">
+                <p>Current Drink Price:</p>
+                <p id="displayPrice">£</p>
+                <button id="addDrink">Add Drink To Order</button>
+                <button id="anotherDrink">Add Another Drink</button>
+            </div>
+        </p>
+
+        <p>
+            <div id="drinkOrder">
+                <p>Current Order:</p>
+                <p id="displayOrder"></p>
+            </div>
+        </p>
+    </fieldset>
+    
+</body>
+</html>
